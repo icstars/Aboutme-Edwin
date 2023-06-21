@@ -4,6 +4,7 @@ body {
   font-size: medium;
   font-weight: bold;
   font-family: Arial;
+  text-align: center;
 }
 
 @keyframes changeBg {
