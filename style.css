@@ -1,5 +1,6 @@
 body {
-  animation: changeBg 10s linear infinite;
+  margin: 0;
+  animation: changeBg 7s linear infinite;
   color: lightgray;
   font-size: medium;
   font-weight: bold;
@@ -18,4 +19,19 @@ body {
   100% {
     background-color: black;
   }
+}
+
+.image {
+  background-image: url(https://s3-prod.pionline.com/s3fs-public/Milwaukee%20Skyline_i.jpg);
+  height: 20vw;
+  width: 100%;
+  background-size: 100% 100%;
+  /* note: if you want to change fit the background image to the background size, use 100% parameter for both */
+}
+
+.header {
+  padding-top: 50px;
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
 }
