@@ -312,7 +312,6 @@ let gravity = 0.5;
     
 // Getting reference to the bird element
 let bird = document.querySelector('.bird');
-    
 // Getting bird element properties
 let bird_props = bird.getBoundingClientRect();
 let background =
@@ -400,17 +399,18 @@ function play() {
         }
       }
     });
-  
     requestAnimationFrame(move);
   }
   requestAnimationFrame(move);
   
   let bird_dy = 0;
   function apply_gravity() {
+    console.log('hey')
     if (game_state != 'Play') return;
     bird_dy = bird_dy + gravity;
     document.addEventListener('keydown', (e) => {
       if (e.key == 'ArrowUp' || e.key == ' ') {
+        console.log('hey')
         bird_dy = -7.6;
       }
     });
@@ -466,3 +466,6 @@ function play() {
     requestAnimationFrame(create_pipe);
   }
   requestAnimationFrame(create_pipe);
+}
+
+play()
