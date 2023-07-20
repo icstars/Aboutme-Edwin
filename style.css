@@ -56,8 +56,8 @@ body {
 }
 
 .bird { 
-  height: 100px;
-  width: 160px;
+  height: 90px;
+  width: 90px;
   position: fixed; 
   top:40vh;
   left: 30vw; 
@@ -69,7 +69,7 @@ body {
   top: 40vh;
   height: 70vh;
   width: 6vw;
-  background-color: black;
+  background-color: rgb(100, 6, 6);
 
 }
 .message { 
